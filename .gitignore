@@ -1,0 +1,8 @@
+// VSCode workstation settings
+.vscode
+
+// Error Logs
+npm-debug.Log
+
+// Directories
+node_modules
