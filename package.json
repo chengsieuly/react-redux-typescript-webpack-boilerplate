@@ -1,0 +1,21 @@
+{
+  "name": "react-redux-typescript-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Quick boilerplate to start a React, Redux, Typescript, Webpack project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "keywords": [
+    "React"
+  ],
+  "author": "Cheng Ly",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "ts-loader": "2.0.0",
+    "typescript": "2.2.0-dev.20170123",
+    "webpack": "2.2.0",
+    "webpack-dev-server": "2.2.0"
+  }
+}
