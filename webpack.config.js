@@ -19,6 +19,31 @@ module.exports = {
         test: /\.tsx?$/,
         use: ['react-hot-loader/webpack', 'awesome-typescript-loader'],
         exclude: /node_modules/
+      },
+      {
+        test: /\.s?css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: 'inline'
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }
+        ],
+        exclude: /node_modules/
       }
     ]
   },
