@@ -1,10 +1,25 @@
 import * as React from 'react';
 import { render } from 'react-dom';
+import { AppContainer } from 'react-hot-loader';
+import App from './containers/App';
 
-class App extends React.Component<{}, {}> {
-  public render() {
-    return <div>Hello world</div>;
-  }
+declare const module: any;
+
+render(
+  <AppContainer>
+    <App />
+  </AppContainer>,
+  document.getElementById("root")
+);
+
+if (module.hot) {
+  module.hot.accept('./containers/App', () => {
+    const NextApp = require('./containers/App').default;
+    render(
+      <AppContainer>
+        <NextApp />
+      </AppContainer>,
+      document.getElementById("root")
+    );
+  });
 }
-
-render(<App />, document.getElementById('root'));

@@ -9,5 +9,8 @@
     "preserveConstEnums": true,
     "removeComments": true,
     "target": "ES5"
-  }
+  },
+  "types": [
+    "node"
+  ]
 }

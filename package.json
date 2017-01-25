@@ -2,11 +2,13 @@
   "name": "react-redux-typescript-webpack-boilerplate",
   "version": "1.0.0",
   "description": "Quick boilerplate to start a React, Redux, Typescript, Webpack project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "node server.js"
   },
   "keywords": [
+    "hmr",
+    "hot module reload",
     "react",
     "typescript",
     "webpack"
@@ -18,9 +20,12 @@
     "react-dom": "15.4.2"
   },
   "devDependencies": {
+    "@types/node": "7.0.4",
     "@types/react": "15.0.1",
     "@types/react-dom": "0.14.20",
-    "ts-loader": "2.0.0",
+    "@types/react-hot-loader": "3.0.1",
+    "awesome-typescript-loader": "^3.0.0-beta.18",
+    "react-hot-loader": "3.0.0-beta.6",
     "typescript": "2.2.0-dev.20170123",
     "webpack": "2.2.0",
     "webpack-dev-server": "2.2.0"
