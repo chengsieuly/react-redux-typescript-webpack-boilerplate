@@ -1,5 +1,8 @@
 const path = require('path');
-const { HotModuleReplacementPlugin } = require('webpack');
+const {
+  HotModuleReplacementPlugin,
+  NamedModulesPlugin
+} = require('webpack');
 
 module.exports = {
   entry: [
@@ -51,6 +54,7 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js']
   },
   plugins: [
-    new HotModuleReplacementPlugin()
+    new HotModuleReplacementPlugin(),
+    new NamedModulesPlugin(),
   ]
 };
