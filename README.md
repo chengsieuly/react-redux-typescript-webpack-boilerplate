@@ -24,7 +24,7 @@ What's included:
 npm i -g yarn
 
 // Install packages with yarn
-yarn i
+yarn install
 
 // Start development server with yarn
 yarn start
